@@ -1,0 +1,17 @@
+=== Improving Analysis
+
+NOTE: Improvement of analysis can range from simple notification of a false-positive, a typographic error up to a complete competitive or counter analysis of the original analysis.
+
+A common difficulty in threat intelligence is to improve existing analysis and how to do efficiently. One of the main question is to ask what will be the target audience
+of the improved analysis and the objective:
+
+. Informing the original analyst/author (e.g. a security vendor or a CSIRT) about a specific mistake or error which needs to be corrected.
+. Improving an existing analysis by performing a complementary analysis or review which will be shared and used by another group (e.g. a specific constituency, team within your organisation or member of an ISAC).
+
+In the case number 1, MISP includes a mechanism to propose changes to the original creator. This mechanism is called proposal. By using proposal, you can propose a change in the value of an attribute (such as a typographic in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept the proposal or discard it.
+
+Adding proposal has some major advantages such as being very quick and there is no need to create a new event. But such approach works only if you are willing to lose control over the data. This is pretty efficient for small changes but if additional information such as galaxy or objects need to be added then the event extension is more appropriate.
+
+In the case number 2, the extend event functionality is very handy. The extend event allow to create your own information into a self-contained event (which can have custom distribution rules) and reference the original analysis. The information can be shared back to the original author or kept in a limited scope such as a specific sector or trust group.
+
+TIP: For more information about the extend event functionality in MISP, the blog post *http://www.misp-project.org/2018/04/19/Extended-Events-Feature.html[Introducing The New Extended Events Feature in MISP]* includes a lot of details.

@@ -1,0 +1,18 @@
+=== What To Share or What Counts As Valuable Information?
+
+NOTE: Valuable information is a moving concept and highly depending of the goal of the users sharing and/or using the information. A valuable information can also evolve following the capabilities of an organisation.
+
+Contribution comes in various shapes and sizes.
+
+Information which are often distributed within sharing communities are the following:
+
+- Analysis report of a specific threat (such as security vendor report, blog post) which can be open source intelligence or limited distribution
+- Enhanced analysis of an existing report (such as data qualification, competitive or counter analysis)
+- A post-mortem analysis of an incident
+- Additional information about existing or known threats (such as adversary techniques, new malware samples or complementary discoveries)
+- False-positive or false-negative reporting
+- Asking for contribution or support from the community (such as "have you seen this threat?" or "do you have more samples?")
+
+TIP: By having a look at https://www.misp-project.org/objects.html[the object templates] or the https://www.misp-project.org/datamodels/#misp-core-format[MISP attribute types], this can help you to discover what it's actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
+
+TIP: When asking for the support of the community, using a specific taxonomy such as https://www.misp-project.org/taxonomies.html#_collaborative_intelligence[collaborative intelligence] to express your needs might help everyone and improve automation.
