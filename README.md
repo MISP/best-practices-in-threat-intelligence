@@ -1,7 +1,7 @@
 
 # Best Practices in Threat Intelligence
 
-This book is to compile the best practices in threat intelligence analysis with the support of the open source threat intelligence platform called https://www.misp-project.org/[MISP].
+This book is to compile the best practices in threat intelligence analysis with the support of the open source threat intelligence platform called [MISP](https://www.misp-project.org/).
 
 The book is readable in [PDF](https://www.misp-project.org/best-practices-in-threat-intelligence.pdf) or [HTML]( https://www.misp-project.org/best-practices-in-threat-intelligence.html) format.
 
