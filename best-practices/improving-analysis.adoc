@@ -1,17 +1,16 @@
 === Improving Analysis
 
-NOTE: Improvement of analysis can range from simple notification of a false-positive, a typographic error up to a complete competitive or counter analysis of the original analysis.
+NOTE: Improvement of the analysis process can range from a simple notification of a false-positive or the correction of a typographic error, all the way up to a complete competitive or counter analysis of the original analysis.
 
-A common difficulty in threat intelligence is to improve existing analysis and how to do efficiently. One of the main question is to ask what will be the target audience
-of the improved analysis and the objective:
+A common difficulty in threat intelligence is to improve existing analyses and especially how to do it efficiently. One of the main questions to ask is: what will be the target audience of the improved analysis and the objective thereof?
 
 . Informing the original analyst/author (e.g. a security vendor or a CSIRT) about a specific mistake or error which needs to be corrected.
-. Improving an existing analysis by performing a complementary analysis or review which will be shared and used by another group (e.g. a specific constituency, team within your organisation or member of an ISAC).
+. Improving an existing analysis by performing a complementary analysis or review which will be shared to and used by another group (e.g. a specific constituent, or a team within your organisation or a member of an ISAC, etc).
 
-In the case number 1, MISP includes a mechanism to propose changes to the original creator. This mechanism is called proposal. By using proposal, you can propose a change in the value of an attribute (such as a typographic in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept the proposal or discard it.
+In the first case, MISP includes a mechanism to propose changes to the original creator, a mechanism we refer to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.
 
-Adding proposal has some major advantages such as being very quick and there is no need to create a new event. But such approach works only if you are willing to lose control over the data. This is pretty efficient for small changes but if additional information such as galaxy or objects need to be added then the event extension is more appropriate.
+The advantages of using the proposal system include the lack of a need to create a new event as well as the process itself being very simple and fast. However, it assumes that the party providing the improvements is willing to lose control over the proposed data. This is pretty efficient for small changes but for more comprehensive changes, especially those that include non-attribute information such as galaxy clusters or objects, the event extension is more appropriate.
 
-In the case number 2, the extend event functionality is very handy. The extend event allow to create your own information into a self-contained event (which can have custom distribution rules) and reference the original analysis. The information can be shared back to the original author or kept in a limited scope such as a specific sector or trust group.
+Apart from being more suitable for more comprehensive changes, the second scenario is also a great fit for the extended event functionality, allowing users wanting to provide additional information or an alternate view-point with the opportunity of creating a self-contained event (which can have its own custom distribution rules) that references the original analysis. This information can be shared back to the original author or kept within a limited distribution scope such as a specific sector, a trust group or as internal information for the organisation providing the additional information.
 
-TIP: For more information about the extend event functionality in MISP, the blog post *http://www.misp-project.org/2018/04/19/Extended-Events-Feature.html[Introducing The New Extended Events Feature in MISP]* includes a lot of details.
+TIP: For more information about the extended event functionality in MISP, the blog post *http://www.misp-project.org/2018/04/19/Extended-Events-Feature.html[Introducing The New Extended Events Feature in MISP]* includes a lot of details.
