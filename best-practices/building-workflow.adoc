@@ -1,0 +1,11 @@
+=== Building a workflow
+
+NOTE: Having a workflow to follow and refer to is something useful for the analyst as well as for other people reading his analysis.
+
+Keeping track of the advancement of an analysis, of what is done or still need to be done, is really important in order to not forget anything or not make the same work twice. So it is essential to have a clear method to keep these information clear and concise.
+
+One of the possible methodologies is to use tags to mark the information.
+
+For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as complete or incomplete. Moreover, it can be used to clearly specify what still need to be done using the todo tags.
+
+TIP: For more information on the MISP Workflow Taxonomy, please feel free to read https://www.misp-project.org/taxonomies.html#_workflow[Workflow taxonomy cheat sheet].
