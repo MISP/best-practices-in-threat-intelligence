@@ -18,6 +18,11 @@ include::{sourcedir}improving-analysis.adoc[]
 include::{sourcedir}what-to-share.adoc[]
 
 <<<
+
+include::{sourcedir}expressing-confidence.adoc[]
+
+<<<
+
 == Authors and Contributors
 
 - Alexandre Dulaunoy
