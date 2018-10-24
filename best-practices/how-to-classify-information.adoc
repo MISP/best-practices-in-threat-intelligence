@@ -1,11 +1,11 @@
 === How to classify information
 
-NOTE: Classifying information is something that has proven being very useful in lots of domains, including threat intelligence as it helps getting the main information very quickly. Moreover, it can help to build correlations between events or reports, allowing analysts to understand threat actors better.
+NOTE: Classifying information is something that has proven being very useful in lots of domains, including Threat Intelligence as it helps assessing the main information very quickly. Moreover, it can help to build correlations between events or reports, allowing analysts to better understand threat actors.
 
 The first tool we can use to classify information are tags and taxonomies
-. Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leak.
-. They can also be used to describe the source where information come from.
-. Many taxonomies allow the user to explain the kind of threat the information
+. Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leaks.
+. They can also be used to describe the source where information came from.
+. Many taxonomies allow the user to further explain the kind of threat [TODO: was that the meaning?]
 --mapping--
 
 - Galaxies
