@@ -23,6 +23,10 @@ include::{sourcedir}expressing-confidence.adoc[]
 
 <<<
 
+include::{sourcedir}building-workflow.adoc[]
+
+<<<
+
 == Authors and Contributors
 
 - Alexandre Dulaunoy
