@@ -4,8 +4,9 @@ NOTE: Having a workflow to follow and refer to is something useful for the analy
 
 Keeping track of the advancement of an analysis, of what is done or still need to be done, is really important in order to not forget anything or not make the same work twice. So it is essential to have a clear method to keep these information clear and concise.
 
-One of the possible methodologies is to use tags to mark the information.
+One of the possible methodologies is to use tags to mark the information and convey the current state of an analysis.
 
-For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as complete or incomplete. Moreover, it can be used to clearly specify what still need to be done using the todo tags.
+For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as complete or incomplete. Moreover, it can be used to clearly specify what still need to be done using the todo tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (`todo`) and the other part is about the current state of the analysis(`state`) such as incomplete, draft or complete.
+
 
 TIP: For more information on the MISP Workflow Taxonomy, please feel free to read https://www.misp-project.org/taxonomies.html#_workflow[Workflow taxonomy cheat sheet].
