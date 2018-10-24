@@ -1,4 +1,4 @@
-=== Building a workflow
+=== How to track and keep the state of an analysis
 
 NOTE: Having a workflow to follow and refer to is something useful for the analyst as well as for other people reading his analysis.
 
