@@ -7,7 +7,7 @@
 
 === Introduction
 
-This book objective is to compile the best practices in threat intelligence analysis with the support of the open source threat intelligence platform called https://www.misp-project.org/[MISP]. The best practices described are from information sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.
+The objective of this book is to compile the best practices in Threat Intelligence Analysis with the support of the Open Source Threat Intelligence platform https://www.misp-project.org/[MISP]. The best practices described here are from Information Sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.
 
 == Best Practices
 
