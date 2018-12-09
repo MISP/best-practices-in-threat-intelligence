@@ -1,16 +1,18 @@
-=== Expressing confidence in an analysis
+=== Expressing confidence/estimative probability in an analysis
 
-NOTE: Expressing the confidence or the lack of in an analysis is critical step to help a partner or a third-party to check your hypotheses and conclusions.
+NOTE: Expressing the confidence or the lack of it in an analysis is a critical step to help a partner or a third-party to check your hypotheses and conclusions.
 
-Analysis or reports are often shared with technical details but often lack the overall confidence level associated.
+Analysis or reports are often shared together with technical details, but often lack the associated overall confidence level.
+[TODO: describe estimative probability] 
 
 Adding confidence or estimative probability have multiple advantages such as:
 
-- Allowing receiving organisations to filter, classify and score the information in an automated way
-- Information with low-confidence can still be shared and reach communities or organisations interested in such information without impacting organisations filtering out by confidence level
-- Supporting counter and competitive analyses to validate hypotheses expressed in original reporting
+- Allow receiving organisations to filter, classify and score the information in an automated way based on related tags
+- Information with low-confidence can still be shared and reach communities or organisations interested in such information without impacting organisations filtering out by increased confidence level
+- Support counter analyses and competitive analyses to validate hypotheses expressed in original reporting
+[TODO: define counter and competitive analyses]
 
-Complement analysis with contrary evidences is also very welcome to ensure the original analysis and the hypotheses evaluated.
+Complement analysis with contrary evidences is also very welcome to ensure the original analysis and the hypotheses are properly evaluated.
 
 TIP: MISP taxonomies contain an exhaustive list of confidence levels including words of https://www.misp-project.org/taxonomies.html#_estimative_language[estimative probability] or confidence in analytic judgment.
 
