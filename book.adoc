@@ -27,6 +27,10 @@ include::{sourcedir}building-workflow.adoc[]
 
 <<<
 
+include::{sourcedir}intelligence-tagging.adoc[]
+
+<<<
+
 == Authors and Contributors
 
 - Alexandre Dulaunoy
