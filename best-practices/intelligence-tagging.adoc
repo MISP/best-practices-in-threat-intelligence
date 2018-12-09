@@ -12,6 +12,8 @@ NOTE: In future releases there will also be tagging for MISP Objects. What is so
 NOTE: MISP Objects in itâ€™s plain concept is a grouping of indicators within one event. These grouped indicators are somehow linked together. The specific relationship is described by the individual object type.
 A simple file object links e.g. a filename to its observed hash values (md5, sha1, sha256 and many more).
 
+A frequent use case for placing additional tages on attribute level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile. 
+
 Most of the tags are organised in a dedicated MISP Taxonomy. This schema dictates how tags should look like and how they are behaving in certain occasions.
 There are a lot of details in this topic in general which can be read up in the main MISP Taxonomy Gitlab repository.
 Currently, there are more than 60 different taxonomies available, each of them containing a number of different tags, which is steadily increasing.
@@ -25,9 +27,9 @@ This data must not leave the boundaries of this virtual border of the recipientâ
 There are multiple solutions and proposals to solve the issue of missing additional information about the shared content in form of tags.
 One of these is the following list of tags which should be at least present to either the event itself or the individual attributes (in this order of importance):
 
-. *https://github.com/MISP/misp-taxonomies/blob/master/tlp/machinetag.json*TLP-Tag: *https://www.us-cert.gov/tlp[TLP]* utilizes a simple four color schema for indicating how intelligence can be shared.
-. *https://github.com/MISP/misp-taxonomies/blob/master/veris/machinetag.json[Confidence]*/*https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[vetting state]*: There are huge differences in the quality of data, whether it was vetted upon sharing. As this means that the author was confident that the shared data is or at least was a good indicator of compromise.
+. *https://github.com/MISP/misp-taxonomies/blob/master/tlp/machinetag.json[TLP-Tag]*: https://www.us-cert.gov/tlp[TLP]* utilizes a simple four color schema for indicating how intelligence can be shared.
+. *https://github.com/MISP/misp-taxonomies/blob/master/veris/machinetag.json[Confidence]*/*https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[Vetting State]*: There are huge differences in the quality of data, whether it was vetted upon sharing. As this means that the author was confident that the shared data is or at least was a good indicator of compromise.
 . *https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[Origin]*: Describes where the information came from, whether it was in an automated fashion or in a manual investigation. This should give an impression how value this intelligence is, as manual investigation should supersede any automatic generation of data.
 . *https://github.com/MISP/misp-taxonomies/blob/master/PAP/machinetag.json[PAP]*: An even more advanced approach of data classification is using the Permissible Actions Protocol. It indicates how the received data can be used to search for compromises within the individual company or constituency.
 
-TIP: The full list of available taxonomies can be found *https://github.com/MISP/misp-taxonomies[here]*
+TIP: The full list of available taxonomies can be found *https://github.com/MISP/misp-taxonomies[here]*.
