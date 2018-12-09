@@ -1,0 +1,33 @@
+=== Intelligence Tagging
+
+There are several factors for not only successful but efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or observable depending on the definition you use),
+stored as attributes within a MISP event itself.
+However, it does not stop there. Even the most viable information gained by a shared event can render itself complete useless if not classified and tagged accordingly.
+One feature which enables a uniformed classification is implemented in MISP as tags. Currently, there are two types of tags, which diverse in the place where they are set.
+For one, you can add tags to an entire event. These tags should be valid for any individual attribute, thus indicator associated to this specific event.
+For a more fine-grained specification all of these tags can also be placed at attribute level. This allows the user to put a more detailed and selective view on each attribute.
+
+NOTE: In future releases there will also be tagging for MISP Objects. What is somehow an intermediate solution for the two prior mentioned options.
+
+NOTE: MISP Objects in it’s plain concept is a grouping of indicators within one event. These grouped indicators are somehow linked together. The specific relationship is described by the individual object type.
+A simple file object links e.g. a filename to its observed hash values (md5, sha1, sha256 and many more).
+
+Most of the tags are organised in a dedicated MISP Taxonomy. This schema dictates how tags should look like and how they are behaving in certain occasions.
+There are a lot of details in this topic in general which can be read up in the main MISP Taxonomy Gitlab repository.
+Currently, there are more than 60 different taxonomies available, each of them containing a number of different tags, which is steadily increasing.
+There are a lot of advantages in having this variety of tags, e.g. there is one tag for each known associated malware type.
+
+However, this sheer huge amount of tags leads to two main concerns, over-tagging and miss-tagging. Beginners can be overwhelmed with the large number of available tags, to miss exactly this taxonomy to properly label the to be shared data.
+Over-tagging in most cases only leads to an overwhelming visual appearance. Miss-tagging, however, is a critical step into misusage of shared data.
+The best and most devastating example would be the miss classification of an event. In dedicated and private sharing groups it is quite usual to share intelligence labeled as „for your company only“.
+This data must not leave the boundaries of this virtual border of the recipient’s firm. To prevent this kind of mistake, the traffic light protocol (aka TLP) and its respective taxonomy can be used.
+
+There are multiple solutions and proposals to solve the issue of missing additional information about the shared content in form of tags.
+One of these is the following list of tags which should be at least present to either the event itself or the individual attributes (in this order of importance):
+
+. *https://github.com/MISP/misp-taxonomies/blob/master/tlp/machinetag.json*TLP-Tag: *https://www.us-cert.gov/tlp[TLP]* utilizes a simple four color schema for indicating how intelligence can be shared.
+. *https://github.com/MISP/misp-taxonomies/blob/master/veris/machinetag.json[Confidence]*/*https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[vetting state]*: There are huge differences in the quality of data, whether it was vetted upon sharing. As this means that the author was confident that the shared data is or at least was a good indicator of compromise.
+. *https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[Origin]*: Describes where the information came from, whether it was in an automated fashion or in a manual investigation. This should give an impression how value this intelligence is, as manual investigation should supersede any automatic generation of data.
+. *https://github.com/MISP/misp-taxonomies/blob/master/PAP/machinetag.json[PAP]*: An even more advanced approach of data classification is using the Permissible Actions Protocol. It indicates how the received data can be used to search for compromises within the individual company or constituency.
+
+TIP: The full list of available taxonomies can be found *https://github.com/MISP/misp-taxonomies[here]*
