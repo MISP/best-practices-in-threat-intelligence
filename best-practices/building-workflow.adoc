@@ -6,7 +6,7 @@ Keeping track of the advancement of an analysis, of what has been done or still 
 
 One of the possible methodologies is to use tags to mark the information and convey the current state of an analysis.
 
-For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as `complete` or `incomplete`. Moreover, it can be used to clearly specify what still needs to be done using the `todo` tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (`todo`) and the other part is about the current state of the analysis(`state`) such as `incomplete`, `draft` or `complete`.
+For instance the MISP Workflow <<Taxonomy>> allows the user to describe the state of an analysis, as `complete` or `incomplete`. Moreover, it can be used to clearly specify what still needs to be done using the `todo` tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (`todo`) and the other part is about the current state of the analysis(`state`) such as `incomplete`, `draft` or `complete`.
 
 
 TIP: For more information on the MISP Workflow Taxonomy, feel free to read the https://www.misp-project.org/taxonomies.html#_workflow[Workflow taxonomy cheat sheet].

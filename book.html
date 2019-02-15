@@ -468,7 +468,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Whilst this book can be used as a general guide, it is based on the open source threat intelligence platform called <a href="https://www.misp-project.org/">MISP</a> to give the reader the most practical and real-world experience.</p>
 </div>
 <div class="paragraph">
-<p>The best practices described herein are from Information Sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.</p>
+<p>The best practices described herein are from Information Sharing communities (<a href="#ISAC">ISAC</a> or CSIRT) which are regularly using MISP to support their work and sharing practices.</p>
 </div>
 </div>
 </div>
@@ -513,7 +513,7 @@ One of the main questions to ask is:</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>In the <strong>1st</strong> case, MISP includes a mechanism to propose changes to the original creator, a mechanism MISP refers to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.</p>
+<p>In the <strong>1st</strong> case, <a href="#MISP">MISP</a> includes a mechanism to propose changes to the original creator, a mechanism MISP refers to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.</p>
 </div>
 <div class="paragraph">
 <p>The advantages of using the proposal system include the lack of a need to create a new event as well as the process itself being very simple and fast. However, it assumes that the party providing the improvements is willing to lose control over the proposed data. This is pretty efficient for small changes but for more comprehensive changes, especially those that include non-attribute information such as galaxy clusters or objects, the event extension is more appropriate.</p>
@@ -536,7 +536,7 @@ For more information about the extended event functionality in MISP, the blog po
 <div class="paragraph">
 <p>In the <strong>3rd</strong> scenario your use-case might be highly automated, e.g. scripted processing of events and attributes via <a href="https://github.com/MISP/PyMISP">PyMISP</a> and the end-consumer is mainly another automated process, e.g. Intrusion Detection System, 3rd part visualization tool etc.
 This, for automagic reasons, becomes exponentially unreliable.
-What is primal in this case is to fully understand what the IDS flag in MISP does and how it impacts attributes.
+What is primal in this case is to fully understand what the <a href="#IDS">IDS</a> flag in MISP does and how it impacts attributes.
 Further on, it is even more important to fully understand the entire tool-chain, cradle-to-grave style.
 Where does the data come from (cradle) where does it go to (grave) and what processes "touch" the data as it flows through, small diagrams can help tremendously to visualize the actual data-flow.
 Those diagrams will mostly be of use once unexpected results occur, or other errors appear somewhere in the chain.</p>
@@ -614,7 +614,7 @@ When asking for the support of the community, using a specific taxonomy such as 
 <div class="sect2">
 <h3 id="_intelligence_tagging">Intelligence Tagging</h3>
 <div class="paragraph">
-<p>There are several factors to successful and efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or observable depending on the definition you use),
+<p>There are several factors to successful and efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or <a href="#observables">observable</a> depending on the definition you use),
 stored as attributes within a MISP event itself.
 However, it does not stop there. Even the most viable information gained by a shared event can render itself complete useless if not classified and tagged accordingly.
 One feature which enables a uniformed classification is implemented in MISP as tags. Currently, there are two types of tags, which differ in the respective place they are set.</p>
@@ -660,14 +660,14 @@ In future releases there will also be tagging for MISP Objects. Which is, someho
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-MISP Objects in its plain concept is a grouping of indicators within one event. These grouped indicators are somehow logically linked together. The specific relationship is described by the individual object type.
+<a href="#MISPObjects">MISP Objects</a> in its plain concept is a grouping of indicators within one event. These grouped indicators are somehow logically linked together. The specific relationship is described by the individual object type.
 A simple <strong>file object</strong>, links for example a filename to its observed hash values (md5, sha1, sha256 and many more). This can further be enriched via misp-modules or other plug-ins.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>A frequent use-case for placing additional tags on attribute level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile.</p>
+<p>A frequent use-case for placing additional tags on <a href="#Attribute">attribute</a> level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile.</p>
 </div>
 <div class="paragraph">
 <p>Most of the tags are organised in dedicated MISP Taxonomies. Those schema dictate how tags should look like and how they are to be applied in certain conditions.
@@ -706,7 +706,7 @@ This data must not leave the boundaries of this virtual border of the recipient�
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-One mitigation the scenario of mis-classified data, would be to use the warning lists (or notice lists) as a canary. Whilst not ideal and far from a defacto solution to catch all issues, it would be a good-enough-yet-coarse way of detection.
+One mitigation the scenario of mis-classified data, would be to use the <a href="#MISPwarninglists">MISP warninglists</a> (or <a href="#MISPnoticelists">MISP noticelists</a>) as a canary. Whilst not ideal and far from a defacto solution to catch all issues, it would be a good-enough-yet-coarse way of detection.
 </td>
 </tr>
 </table>
@@ -762,17 +762,12 @@ Expressing the confidence or the lack of it in an analysis is a critical step to
 </div>
 <div class="paragraph">
 <p>Analysis or reports are often shared together with technical details, but often lack the associated overall confidence level.
-To ascertain this confidence level you can use for example the MISP Taxonomies called <a href="https://www.misp-project.org/taxonomies.html#_admiralty_scale">admiralty-scale</a> and/or <a href="https://www.misp-project.org/taxonomies.html#_estimative_language">estimative-language</a>.
+To ascertain this confidence level you can use for example the MISP <a href="#MISPTaxonomies">MISP Taxonomies</a> called <a href="https://www.misp-project.org/taxonomies.html#_admiralty_scale">admiralty-scale</a> and/or <a href="https://www.misp-project.org/taxonomies.html#_estimative_language">estimative-language</a>.
 This is a very human way to describe either globally an event or individual indicators of an event, with a set of easy to read human tags. (e.g: admiralty-scale:source-reliability="a/b/c&#8230;&#8203;", estimative-language:likelihood-probability="almost-no-chance", estimative-language:confidence-in-analytic-judgment="moderate")
 Generally it is good practice to do this globally for the event as this will enrich the trust/value if set.
 Using this in an automated way is also possible but without human intervention, or AI that actually works, not recommended.
 Also, on events with hundreds of attributes this is cumbersome and perhaps unfeasible and will just frustrate operators.
 The obvious side-effect of this approach is that automation will be the overall benefactor too upping the trust on that level too.</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>[TODO: revise description of estimative probability]</pre>
-</div>
 </div>
 <div class="paragraph">
 <p>Thus, adding confidence or estimative probability has multiple advantages such as:</p>
@@ -790,11 +785,6 @@ The obvious side-effect of this approach is that automation will be the overall 
 </li>
 <li>
 <p>Depending on source organisation, have an affirmative that some HumInt has one into the sharing process</p>
-<div class="literalblock">
-<div class="content">
-<pre>[TODO: define counter and competitive analyses]</pre>
-</div>
-</div>
 </li>
 </ul>
 </div>
@@ -808,7 +798,7 @@ The obvious side-effect of this approach is that automation will be the overall 
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-MISP taxonomies contain an exhaustive list of confidence levels including words of <a href="https://www.misp-project.org/taxonomies.html#_estimative_language">estimative probability</a> or confidence in analytic judgment.
+<a href="#MISPTaxonomies">MISP Taxonomies</a> contain an exhaustive list of confidence levels including words of <a href="https://www.misp-project.org/taxonomies.html#_estimative_language">estimative probability</a> or confidence in analytic judgment.
 </td>
 </tr>
 </table>
@@ -848,7 +838,7 @@ Having a workflow to follow, and be able to refer to, is something useful for th
 <p>One of the possible methodologies is to use tags to mark the information and convey the current state of an analysis.</p>
 </div>
 <div class="paragraph">
-<p>For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as <code>complete</code> or <code>incomplete</code>. Moreover, it can be used to clearly specify what still needs to be done using the <code>todo</code> tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (<code>todo</code>) and the other part is about the current state of the analysis(<code>state</code>) such as <code>incomplete</code>, <code>draft</code> or <code>complete</code>.</p>
+<p>For instance the MISP Workflow <a href="#Taxonomy">[Taxonomy]</a> allows the user to describe the state of an analysis, as <code>complete</code> or <code>incomplete</code>. Moreover, it can be used to clearly specify what still needs to be done using the <code>todo</code> tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (<code>todo</code>) and the other part is about the current state of the analysis(<code>state</code>) such as <code>incomplete</code>, <code>draft</code> or <code>complete</code>.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -879,16 +869,25 @@ Classifying information is something that has proven being very useful in lots o
 </table>
 </div>
 <div class="paragraph">
-<p>The first tool we can use to classify information are tags and taxonomies
-. Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leaks.
-. They can also be used to describe the source where information came from.
-. Many taxonomies allow the user to further explain the kind of threat.[TODO: was that the meaning?]
---mapping--</p>
+<p>The first tool we can use to classify information are tags and taxonomies</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leaks.</p>
+</li>
+<li>
+<p>They can also be used to describe the source where information came from.</p>
+</li>
+<li>
+<p>Many taxonomies allow the user to further explain the kind of threat.</p>
+</li>
+</ol>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Galaxies (ATT&amp;CK matrix)</p>
+<p><a href="#MISPGalaxies">[MISPGalaxies]</a> (ATT&amp;CK matrix)</p>
 </li>
 <li>
 <p>Comments</p>
@@ -908,7 +907,7 @@ Classifying information is something that has proven being very useful in lots o
 <p><a href="https://github.com/adulau">Alexandre Dulaunoy</a></p>
 </li>
 <li>
-<p><a href="https://github.com/igl0cksa">Andras Iklody</a></p>
+<p><a href="https://github.com/iglocska">Andras Iklody</a></p>
 </li>
 <li>
 <p><a href="https://github.com/SteveClement">Steve Clement</a></p>
@@ -922,81 +921,81 @@ Classifying information is something that has proven being very useful in lots o
 <div class="sectionbody">
 <div class="dlist glossary">
 <dl>
-<dt>MISP Glossary</dt>
+<dt><a id="MISPGlossary"></a>MISP Glossary</dt>
 <dd>
 <p>This glossary is meant as a quick lookup document in case of any need of clarification of any threat sharing, threat-intel lingo.
 Be careful when adding terms to the glossary. Adding a generic term like: <strong>MISP</strong> will prevent terms like <strong>MISP noticelist</strong> to be addded. As a matter of definition please use the singular for any terms.
 In case you use any CCBYSA licensed content, or other pieces that are subject to licensing, make sure to add it as a by-line at the end of the mention.</p>
 </dd>
-<dt>ISAC</dt>
+<dt><a id="ISAC"></a>ISAC</dt>
 <dd>
 <p>Information Sharing and Analysis Center</p>
 </dd>
-<dt>MISP</dt>
+<dt><a id="MISP"></a>MISP</dt>
 <dd>
 <p>MISP - Open Source Threat Intelligence Platform &amp; Open Standards For Threat Information Sharing</p>
 </dd>
-<dt>MISP Modules</dt>
+<dt><a id="MISPModules"></a>MISP Modules</dt>
 <dd>
 <p>MISP modules are autonomous modules that can be used for expansion and other services in MISP. <a href="https://github.com/MISP/misp-modules">MISP modules GitHub Repository</a></p>
 </dd>
-<dt>MISP warninglists</dt>
+<dt><a id="MISPwarninglists"></a>MISP warninglists</dt>
 <dd>
 <p>MISP warninglists are lists of well-known indicators that can be associated to potential false positives, errors or mistakes. <a href="https://github.com/MISP/misp-warninglists">MISP warninglists GitHub Repository</a></p>
 </dd>
-<dt>MISP noticelist</dt>
+<dt><a id="MISPnoticelists"></a>MISP noticelists</dt>
 <dd>
 <p>Notice lists to inform MISP users of the legal, privacy, policy or even technical implications of using specific attributes, categories or objects. <a href="https://github.com/MISP/misp-noticelist">MISP noticelist GitHub Repository</a></p>
 </dd>
-<dt>MISP Taxonomies</dt>
+<dt><a id="MISPTaxonomies"></a>MISP Taxonomies</dt>
 <dd>
 <p><a href="https://en.wikipedia.org/wiki/Taxonomy_(general)">Taxonomy</a> is the practice and science of classification. The word is also used as a count noun: a taxonomy, or taxonomic scheme, is a particular classification. The word finds its roots in the Greek language τάξις, taxis (meaning 'order', 'arrangement') and νόμος, nomos ('law' or 'science'). For more details on taxonomies and classification <a href="https://www.circl.lu/doc/misp-taxonomies/">the documentation</a>. Partial source <a href="https://en.wikipedia.org/wiki/Taxonomy_(general)">"Taxonomy_(general)"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>. There is a Python module available to work with Taxonomies in a Pythonic way called <a href="https://github.com/MISP/PyTaxonomies">PyTaxonomies</a>. <a href="https://github.com/MISP/misp-taxonomies">MISP taxonomies GitHub Repository</a></p>
 </dd>
-<dt>MISP Sightings</dt>
+<dt><a id="MISPSightings"></a>MISP Sightings</dt>
 <dd>
 <p>Basically, sighting is a system allowing people to react on attributes on an event. It was originally designed to provide an easy method for user to tell when they see a given attribute, giving it more credibility.</p>
 </dd>
-<dt>MISP Objects</dt>
+<dt><a id="MISPObjects"></a>MISP Objects</dt>
 <dd>
 <p>MISP objects are used in MISP (starting from version 2.4.80) system and can be used by other information sharing tool. MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing. The objects are just shared like any other attributes in MISP even if the other MISP instances don’t have the template of the object. The following document is generated from the machine-readable JSON describing the MISP objects. <a href="https://github.com/MISP/misp-objects">MISP objects GitHub Repository</a> <a href="https://www.misp-project.org/objects.html">More</a></p>
 </dd>
-<dt>API</dt>
+<dt><a id="API"></a>API</dt>
 <dd>
 <p>MISP makes extensive use of its RESTful API (Application programming interface) both internally and provides an external API for automation, synchronisation or any other tasks requiring a machine to machine interface. In general terms, it is a set of clearly defined methods of communication between various software components. A good <a href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. An API may be for a web-based system, operating system, database system, computer hardware or software library. The de-facto standard for talking to MISP via an API is <a href="https://github.com/MISP/PyMISP">PyMISP</a>. Partial source <a href="https://en.wikipedia.org/wiki/Application_programming_interface">"API"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
 </dd>
-<dt>RESTful</dt>
+<dt><a id="RESTful"></a>RESTful</dt>
 <dd>
 <p>Representational state transfer (<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>) or RESTful web services are a way of providing interoperability between computer systems on the Internet. REST-compliant Web services allow requesting systems to access and manipulate textual representations of Web resources using a uniform and predefined set of stateless operations. Other forms of Web services exist which expose their own arbitrary sets of operations such as WSDL and SOAP. Source <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">"REST"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
 </dd>
-<dt>PyMISP</dt>
+<dt><a id="PyMISP"></a>PyMISP</dt>
 <dd>
 <p><a href="https://github.com/MISP/PyMISP">PyMISP</a> is a Python library to access <a href="https://github.com/MISP/MISP">MISP</a> platforms via their REST API. PyMISP allows you to fetch events, add or update events/attributes, add or update samples or search for attributes.</p>
 </dd>
-<dt>IDS</dt>
+<dt><a id="IDS"></a>IDS</dt>
 <dd>
 <p>An IDS flag on an attribute allows to determine if an attribute can be automated (such as being exported as an IDS ruleset or used for detection). If the IDS flag is not present, the attribute can be useful for contextualisation only.</p>
 </dd>
-<dt>IOC</dt>
+<dt><a id="IOC"></a>IOC</dt>
 <dd>
 <p>Indicator of compromise (IOC or IoC) is an artefact observed on a network or in an operating system or information channel that could reference an intrusion or a reference to a technique used by an attacker. IoCs are a subset of indicators.</p>
 </dd>
-<dt>Attribute</dt>
+<dt><a id="Attribute"></a>Attribute</dt>
 <dd>
 <p>Attributes in MISP can be network indicators (e.g. IP address), system indicators (e.g. a string in memory) or even bank account details.</p>
 </dd>
-<dt>Observable</dt>
+<dt><a id="Observable"></a>Observable</dt>
 <dd>
 <p>Obserbables are essentially the same as (MISP) attributes.</p>
 </dd>
-<dt>Site admin</dt>
+<dt><a id="SiteAdmin"></a>Site Admin</dt>
 <dd>
 <p>As an admin (not to be confused with Org Admin), you can set up new accounts for users, edit user profiles, delete them, or just have a look at all the viewers' profiles. Site admins have access to every administrator feature for all the data located on the system including global features such as the creation and modification of user roles and instance links. You will also see all other organisations connected or setup in the instance. The site admin can be considered as a super-user of a MISP instance.</p>
 </dd>
-<dt>Org Admin</dt>
+<dt><a id="OrgAdmin"></a>Org Admin</dt>
 <dd>
 <p>Organisation admins (Org Admin) are restricted to executing site-admin actions exclusively within their own organisation’s users only. They can administer users, events and logs of their own respective organisations.</p>
 </dd>
-<dt>OSINT</dt>
+<dt><a id="OSINT"></a>OSINT</dt>
 <dd>
 <p><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">Open-source intelligence</a> (OSINT) is data collected from publicly available sources to be used in an intelligence context.[1] In the intelligence community, the term "open" refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence. OSINT under one name or another has been around for hundreds of years. With the advent of instant communications and rapid information transfer, a great deal of actionable and predictive intelligence can now be obtained from public, unclassified sources. Source <a href="https://en.wikipedia.org/wiki/Open-source_intelligence">"Open-source intelligence"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
 </dd>
@@ -1007,7 +1006,7 @@ In case you use any CCBYSA licensed content, or other pieces that are subject to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-02-15 17:45:14 +0900
+Last updated 2019-02-15 19:47:34 +0800
 </div>
 </div>
 </body>

@@ -13,7 +13,7 @@ The following three answers could come to mind.
 . Improving an existing analysis by performing a complementary analysis or review which will be shared to and used by another group (e.g. a specific constituent, or a team within your organisation or a member of an ISAC, etc).
 . The end-consumer will be an automaton.
 
-In the **1st** case, MISP includes a mechanism to propose changes to the original creator, a mechanism MISP refers to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.
+In the **1st** case, <<MISP>> includes a mechanism to propose changes to the original creator, a mechanism MISP refers to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.
 
 The advantages of using the proposal system include the lack of a need to create a new event as well as the process itself being very simple and fast. However, it assumes that the party providing the improvements is willing to lose control over the proposed data. This is pretty efficient for small changes but for more comprehensive changes, especially those that include non-attribute information such as galaxy clusters or objects, the event extension is more appropriate.
 
@@ -23,7 +23,7 @@ TIP: For more information about the extended event functionality in MISP, the bl
 
 In the **3rd** scenario your use-case might be highly automated, e.g. scripted processing of events and attributes via https://github.com/MISP/PyMISP[PyMISP] and the end-consumer is mainly another automated process, e.g. Intrusion Detection System, 3rd part visualization tool etc.
 This, for automagic reasons, becomes exponentially unreliable.
-What is primal in this case is to fully understand what the IDS flag in MISP does and how it impacts attributes.
+What is primal in this case is to fully understand what the <<IDS>> flag in MISP does and how it impacts attributes.
 Further on, it is even more important to fully understand the entire tool-chain, cradle-to-grave style.
 Where does the data come from (cradle) where does it go to (grave) and what processes "touch" the data as it flows through, small diagrams can help tremendously to visualize the actual data-flow.
 Those diagrams will mostly be of use once unexpected results occur, or other errors appear somewhere in the chain.
