@@ -1,6 +1,6 @@
 === What To Share or What Counts As Valuable Information?
 
-NOTE: Valuable information is a moving concept and highly depending of the goal of the users sharing and/or using the information. A valuable information can also evolve following the capabilities of an organisation.
+NOTE: Valuable information is a moving concept and depends highly on the goal of the users sharing and/or using the information. A valuable information can also evolve following the capabilities of an organisation.
 
 Contribution comes in various shapes and sizes.
 
@@ -13,6 +13,6 @@ Information which is often distributed within sharing communities are the follow
 - False-positive or false-negative reporting
 - Asking for contribution or support from the community (such as "have you seen this threat?" or "do you have more samples?")
 
-TIP: By having a look at https://www.misp-project.org/objects.html[the object templates] or the https://www.misp-project.org/datamodels/#misp-core-format[MISP attribute types], this can help you to discover what is actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
+TIP: By having a look at https://www.misp-project.org/objects.html[the object templates] or the https://www.misp-project.org/datamodels/#misp-core-format[MISP attribute types], this can help you discover what is actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
 
-TIP: When asking for the support of the community, using a specific taxonomy such as https://www.misp-project.org/taxonomies.html#_collaborative_intelligence[collaborative intelligence] to express your needs might help everyone and improve automation.
+TIP: When asking for the support of the community, using a specific taxonomy such as https://www.misp-project.org/taxonomies.html#_collaborative_intelligence[collaborative intelligence] to express your needs, will make your request more concise improving your feedback potential and improve automation.

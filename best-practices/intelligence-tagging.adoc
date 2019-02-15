@@ -1,31 +1,43 @@
 === Intelligence Tagging
 
-There are several factors for not only successful but efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or observable depending on the definition you use),
+There are several factors to successful and efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or observable depending on the definition you use),
 stored as attributes within a MISP event itself.
 However, it does not stop there. Even the most viable information gained by a shared event can render itself complete useless if not classified and tagged accordingly.
-One feature which enables a uniformed classification is implemented in MISP as tags. Currently, there are two types of tags, which diverse in the place where they are set.
-For one, you can add tags to an entire event. These tags should be valid for any individual attribute, thus indicator associated to this specific event.
-For a more fine-grained specification all of these tags can also be placed at attribute level. This allows the user to put a more detailed and selective view on each attribute.
+One feature which enables a uniformed classification is implemented in MISP as tags. Currently, there are two types of tags, which differ in the respective place they are set.
 
-NOTE: In future releases there will also be tagging for MISP Objects. What is somehow an intermediate solution for the two prior mentioned options.
+. You can add tags to an **entire event**. These **tags should be valid for any individual attribute**, thus indicator associated to this specific event.
+. For a more fine-grained specification all of these tags can also be placed at attribute level. This allows the user to put a more detailed and selective view on each attribute.
 
-NOTE: MISP Objects in it’s plain concept is a grouping of indicators within one event. These grouped indicators are somehow linked together. The specific relationship is described by the individual object type.
-A simple file object links e.g. a filename to its observed hash values (md5, sha1, sha256 and many more).
+NOTE: Currently there is no programmatic way that prevents you from not following the 1st rule. Thus human garbage tagging in automation output potentially useless.
 
-A frequent use case for placing additional tages on attribute level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile.
+NOTE: In future releases there will also be tagging for MISP Objects. Which is, somehow, an intermediate solution for the two prior mentioned options.
 
-Most of the tags are organised in a dedicated MISP Taxonomy. This schema dictates how tags should look like and how they are behaving in certain occasions.
-There are a lot of details in this topic in general which can be read up in the main MISP Taxonomy Gitlab repository.
-Currently, there are more than 60 different taxonomies available, each of them containing a number of different tags, which is steadily increasing.
-There are a lot of advantages in having this variety of tags, e.g. there is one tag for each known associated malware type.
+NOTE: MISP Objects in its plain concept is a grouping of indicators within one event. These grouped indicators are somehow logically linked together. The specific relationship is described by the individual object type.
+A simple **file object**, links for example a filename to its observed hash values (md5, sha1, sha256 and many more). This can further be enriched via misp-modules or other plug-ins.
 
-However, this sheer huge amount of tags leads to two main concerns, over-tagging and miss-tagging. Beginners can be overwhelmed with the large number of available tags, to miss exactly this taxonomy to properly label the to be shared data.
-Over-tagging in most cases only leads to an overwhelming visual appearance. Miss-tagging, however, is a critical step into misusage of shared data.
+A frequent use-case for placing additional tags on attribute level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile.
+
+Most of the tags are organised in dedicated MISP Taxonomies. Those schema dictate how tags should look like and how they are to be applied in certain conditions.
+There are many general details on this topic which can be read up on in the main https://github.com/MISP/misp-taxonomies[MISP Taxonomy GitHub repository].
+Currently, there are more than 60 different taxonomies available, each of them containing a number of different tags, which are steadily increasing and evolving.
+There are a lot of advantages in having such a vast variety of tags, e.g. there is one tag for each known associated malware type.
+
+However, this sheer amount of tags can lead to two main concerns, **over-tagging** and **miss-tagging**. Beginners can be overwhelmed with the large number of available tags, and might miss exactly the required taxonomy to properly label the to be shared data.
+As a site administrator it is thus important to enable the taxonomies that are known to the users on the MISP instance, (or to remote organizations you might sync with).
+
+NOTE: In MISP making a Taxonomy available is a 2-step process. First you make the taxonomy available and then you can either decide to enable all the individual tags in the taxonomy or cherry-pick only the relevant ones for your use-case. (The Vocabulary for Event Recording and Incident Sharing (VERIS) has well over 1990 tags, and perhaps you are only interested in the sub-set `veris:action:error:variety`).
+
+Over-tagging in most cases only leads to an overwhelming visual appearance. Miss-tagging, however, is a critical step into mis-usage of shared data.
 The best and most devastating example would be the miss classification of an event. In dedicated and private sharing groups it is quite usual to share intelligence labeled as „for your company only“.
-This data must not leave the boundaries of this virtual border of the recipient’s firm. To prevent this kind of mistake, the traffic light protocol (aka TLP) and its respective taxonomy can be used.
+This data must not leave the boundaries of this virtual border of the recipient’s firm.
 
-There are multiple solutions and proposals to solve the issue of missing additional information about the shared content in form of tags.
-One of these is the following list of tags which should be at least present to either the event itself or the individual attributes (in this order of importance):
+To prevent this kind of mistake, the traffic light protocol (aka TLP) and its respective taxonomy can be used and thus complementing the mitigation in the note below.
+
+NOTE: One mitigation the scenario of mis-classified data, would be to use the warning lists (or notice lists) as a canary. Whilst not ideal and far from a defacto solution to catch all issues, it would be a good-enough-yet-coarse way of detection.
+
+There are multiple solutions to solve the issue of missing additional information about the shared content.
+One of them is the following list of tags which are deemed to be the minimal subset at the start of any event or the individual attributes.
+sharing platform. The list below is in order of importance.
 
 . *https://github.com/MISP/misp-taxonomies/blob/master/tlp/machinetag.json[TLP-Tags]*: https://www.us-cert.gov/tlp[TLP] utilizes a simple four color schema for indicating how intelligence can be shared.
 . *https://github.com/MISP/misp-taxonomies/blob/master/veris/machinetag.json[Confidence-Tags]*/*https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[Vetting State]*: There are huge differences in the quality of data, whether it was vetted upon sharing. As this means that the author was confident that the shared data is or at least was a good indicator of compromise.

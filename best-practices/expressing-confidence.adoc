@@ -3,14 +3,23 @@
 NOTE: Expressing the confidence or the lack of it in an analysis is a critical step to help a partner or a third-party to check your hypotheses and conclusions.
 
 Analysis or reports are often shared together with technical details, but often lack the associated overall confidence level.
-[TODO: describe estimative probability] 
+To ascertain this confidence level you can use for example the MISP Taxonomies called https://www.misp-project.org/taxonomies.html#_admiralty_scale[admiralty-scale] and/or https://www.misp-project.org/taxonomies.html#_estimative_language[estimative-language].
+This is a very human way to describe either globally an event or individual indicators of an event, with a set of easy to read human tags. (e.g: admiralty-scale:source-reliability="a/b/c...", estimative-language:likelihood-probability="almost-no-chance", estimative-language:confidence-in-analytic-judgment="moderate")
+Generally it is good practice to do this globally for the event as this will enrich the trust/value if set.
+Using this in an automated way is also possible but without human intervention, or AI that actually works, not recommended.
+Also, on events with hundreds of attributes this is cumbersome and perhaps unfeasible and will just frustrate operators.
+The obvious side-effect of this approach is that automation will be the overall benefactor too upping the trust on that level too.
 
-Adding confidence or estimative probability have multiple advantages such as:
+ [TODO: revise description of estimative probability]
+
+Thus, adding confidence or estimative probability has multiple advantages such as:
 
 - Allow receiving organisations to filter, classify and score the information in an automated way based on related tags
 - Information with low-confidence can still be shared and reach communities or organisations interested in such information without impacting organisations filtering out by increased confidence level
 - Support counter analyses and competitive analyses to validate hypotheses expressed in original reporting
-[TODO: define counter and competitive analyses]
+- Depending on source organisation, have an affirmative that some HumInt has one into the sharing process
+
+ [TODO: define counter and competitive analyses]
 
 Complement analysis with contrary evidences is also very welcome to ensure the original analysis and the hypotheses are properly evaluated.
 

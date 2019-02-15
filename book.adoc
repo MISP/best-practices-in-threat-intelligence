@@ -5,9 +5,13 @@
 :toc:
 :icons: font
 
-=== Introduction
+== Introduction
 
-The objective of this book is to compile the best practices in Threat Intelligence Analysis with the support of the Open Source Threat Intelligence platform https://www.misp-project.org/[MISP]. The best practices described here are from Information Sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.
+The aim of this book is to compile the best practices in threat intelligence analysis.
+
+Whilst this book can be used as a general guide, it is based on the open source threat intelligence platform called https://www.misp-project.org/[MISP] to give the reader the most practical and real-world experience.
+
+The best practices described herein are from Information Sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.
 
 == Best Practices
 
@@ -19,6 +23,10 @@ include::{sourcedir}what-to-share.adoc[]
 
 <<<
 
+include::{sourcedir}intelligence-tagging.adoc[]
+
+<<<
+
 include::{sourcedir}expressing-confidence.adoc[]
 
 <<<
@@ -27,18 +35,37 @@ include::{sourcedir}building-workflow.adoc[]
 
 <<<
 
-include::{sourcedir}intelligence-tagging.adoc[]
+include::{sourcedir}how-to-classify-information.adoc[]
 
 <<<
-
 == Authors and Contributors
 
-- Alexandre Dulaunoy
-- Andras Iklody
+- https://github.com/adulau[Alexandre Dulaunoy]
+- https://github.com/igl0cksa[Andras Iklody]
+- https://github.com/SteveClement[Steve Clement]
 
 [glossary]
 == Glossary
 
 [glossary]
+MISP Glossary:: This glossary is meant as a quick lookup document in case of any need of clarification of any threat sharing, threat-intel lingo.
+Be careful when adding terms to the glossary. Adding a generic term like: *MISP* will prevent terms like *MISP noticelist* to be addded. As a matter of definition please use the singular for any terms.
+In case you use any CCBYSA licensed content, or other pieces that are subject to licensing, make sure to add it as a by-line at the end of the mention.
 ISAC:: Information Sharing and Analysis Center
 MISP:: MISP - Open Source Threat Intelligence Platform & Open Standards For Threat Information Sharing
+MISP Modules:: MISP modules are autonomous modules that can be used for expansion and other services in MISP. https://github.com/MISP/misp-modules[MISP modules GitHub Repository]
+MISP warninglists:: MISP warninglists are lists of well-known indicators that can be associated to potential false positives, errors or mistakes. https://github.com/MISP/misp-warninglists[MISP warninglists GitHub Repository]
+MISP noticelist:: Notice lists to inform MISP users of the legal, privacy, policy or even technical implications of using specific attributes, categories or objects. https://github.com/MISP/misp-noticelist[MISP noticelist GitHub Repository]
+MISP Taxonomies:: https://en.wikipedia.org/wiki/Taxonomy_(general)[Taxonomy] is the practice and science of classification. The word is also used as a count noun: a taxonomy, or taxonomic scheme, is a particular classification. The word finds its roots in the Greek language τάξις, taxis (meaning 'order', 'arrangement') and νόμος, nomos ('law' or 'science'). For more details on taxonomies and classification https://www.circl.lu/doc/misp-taxonomies/[the documentation]. Partial source https://en.wikipedia.org/wiki/Taxonomy_(general)["Taxonomy_(general)"] - https://creativecommons.org/licenses/by-sa/3.0/[CCBYSA]. There is a Python module available to work with Taxonomies in a Pythonic way called https://github.com/MISP/PyTaxonomies[PyTaxonomies]. https://github.com/MISP/misp-taxonomies[MISP taxonomies GitHub Repository]
+MISP Sightings:: Basically, sighting is a system allowing people to react on attributes on an event. It was originally designed to provide an easy method for user to tell when they see a given attribute, giving it more credibility.
+MISP Objects:: MISP objects are used in MISP (starting from version 2.4.80) system and can be used by other information sharing tool. MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing. The objects are just shared like any other attributes in MISP even if the other MISP instances don’t have the template of the object. The following document is generated from the machine-readable JSON describing the MISP objects. https://github.com/MISP/misp-objects[MISP objects GitHub Repository] https://www.misp-project.org/objects.html[More]
+API:: MISP makes extensive use of its RESTful API (Application programming interface) both internally and provides an external API for automation, synchronisation or any other tasks requiring a machine to machine interface. In general terms, it is a set of clearly defined methods of communication between various software components. A good https://en.wikipedia.org/wiki/Application_programming_interface[API] makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. An API may be for a web-based system, operating system, database system, computer hardware or software library. The de-facto standard for talking to MISP via an API is https://github.com/MISP/PyMISP[PyMISP]. Partial source https://en.wikipedia.org/wiki/Application_programming_interface["API"] - https://creativecommons.org/licenses/by-sa/3.0/[CCBYSA].
+RESTful:: Representational state transfer (https://en.wikipedia.org/wiki/Representational_state_transfer[REST]) or RESTful web services are a way of providing interoperability between computer systems on the Internet. REST-compliant Web services allow requesting systems to access and manipulate textual representations of Web resources using a uniform and predefined set of stateless operations. Other forms of Web services exist which expose their own arbitrary sets of operations such as WSDL and SOAP. Source https://en.wikipedia.org/wiki/Representational_state_transfer["REST"] - https://creativecommons.org/licenses/by-sa/3.0/[CCBYSA].
+PyMISP:: https://github.com/MISP/PyMISP[PyMISP] is a Python library to access https://github.com/MISP/MISP[MISP] platforms via their REST API. PyMISP allows you to fetch events, add or update events/attributes, add or update samples or search for attributes.
+IDS:: An IDS flag on an attribute allows to determine if an attribute can be automated (such as being exported as an IDS ruleset or used for detection). If the IDS flag is not present, the attribute can be useful for contextualisation only.
+IOC:: Indicator of compromise (IOC or IoC) is an artefact observed on a network or in an operating system or information channel that could reference an intrusion or a reference to a technique used by an attacker. IoCs are a subset of indicators.
+Attribute:: Attributes in MISP can be network indicators (e.g. IP address), system indicators (e.g. a string in memory) or even bank account details.
+Observable:: Obserbables are essentially the same as (MISP) attributes.
+Site admin:: As an admin (not to be confused with Org Admin), you can set up new accounts for users, edit user profiles, delete them, or just have a look at all the viewers' profiles. Site admins have access to every administrator feature for all the data located on the system including global features such as the creation and modification of user roles and instance links. You will also see all other organisations connected or setup in the instance. The site admin can be considered as a super-user of a MISP instance.
+Org Admin:: Organisation admins (Org Admin) are restricted to executing site-admin actions exclusively within their own organisation’s users only. They can administer users, events and logs of their own respective organisations.
+OSINT:: https://en.wikipedia.org/wiki/Open-source_intelligence[Open-source intelligence] (OSINT) is data collected from publicly available sources to be used in an intelligence context.[1] In the intelligence community, the term "open" refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence. OSINT under one name or another has been around for hundreds of years. With the advent of instant communications and rapid information transfer, a great deal of actionable and predictive intelligence can now be obtained from public, unclassified sources. Source https://en.wikipedia.org/wiki/Open-source_intelligence["Open-source intelligence"] - https://creativecommons.org/licenses/by-sa/3.0/[CCBYSA].

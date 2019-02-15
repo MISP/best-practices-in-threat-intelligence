@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.7.1">
+<meta name="generator" content="Asciidoctor 1.5.8">
 <meta name="author" content="MISP Project">
 <title>Best Practices in Threat Intelligence</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -80,7 +80,7 @@ h2{font-size:1.6875em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
 h4,h5{font-size:1.125em}
 h6{font-size:1em}
-hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
 em,i{font-style:italic;line-height:inherit}
 strong,b{font-weight:bold;line-height:inherit}
 small{font-size:60%;line-height:inherit}
@@ -142,9 +142,9 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content{margin-top:1.25em}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
-#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
-#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
 #header .details br{display:none}
@@ -153,8 +153,8 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #header .details br+span#revremark::before{content:"\00a0|\00a0"}
 #header #revnumber{text-transform:capitalize}
 #header #revnumber::after{content:"\00a0"}
-#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
-#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
 #toc>ul{margin-left:.125em}
 #toc ul.sectlevel0>li>a{font-style:italic}
 #toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
@@ -165,13 +165,13 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
-#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
 #toc.toc2 ul ul{margin-left:0;padding-left:1em}
 #toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
 body.toc2.toc-right{padding-left:0;padding-right:15em}
-body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
 @media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
 #toc.toc2{width:20em}
 #toc.toc2 #toctitle{font-size:1.375em}
@@ -188,7 +188,7 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 @media screen and (min-width:768px){#content{margin-bottom:1.25em}
 .sect1{padding-bottom:1.25em}}
 .sect1:last-child{padding-bottom:0}
-.sect1+.sect1{border-top:1px solid #efefed}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
 #content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
 #content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
 #content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
@@ -203,7 +203,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
-.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
@@ -215,10 +215,10 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
 .sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
-.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
-.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock pre.nowrap,.literalblock pre.nowrap pre,.listingblock pre.nowrap,.listingblock pre.nowrap pre{white-space:pre;word-wrap:normal}
 .literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
 .listingblock pre.highlightjs{padding:0}
 .listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
@@ -231,19 +231,16 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
 table.pyhltable td.code{padding-left:.75em;padding-right:0}
-pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #dddddf}
 pre.pygments .lineno{display:inline-block;margin-right:.25em}
 table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
-.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
 .quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
-.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
-.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
-.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
-.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
 .verseblock{margin:0 1em 1.25em}
 .verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
 .verseblock pre strong{font-weight:400}
@@ -251,10 +248,13 @@ table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
 .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
 .quoteblock .attribution br,.verseblock .attribution br{display:none}
 .quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{word-spacing:0;line-height:1.6}
-.quoteblock.abstract blockquote::before,.quoteblock.abstract p::before{display:none}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
 p.tableblock:last-child{margin-bottom:0}
 td.tableblock>.content{margin-bottom:-1.25em}
@@ -313,8 +313,8 @@ td.hdlist1{font-weight:bold;padding-bottom:1.25em}
 .colist td:not([class]):first-child img{max-width:none}
 .colist td:not([class]):last-child{padding:.25em 0}
 .thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
-.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
-.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
 .imageblock>.title{margin-bottom:0}
 .imageblock.thumb,.imageblock.th{border-width:6px}
 .imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
@@ -408,7 +408,7 @@ svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
 h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
-#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
 body.book #header{text-align:center}
 body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
 body.book #header .details{border:0!important;display:block;padding:0!important}
@@ -440,13 +440,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel2">
+<ul class="sectlevel1">
 <li><a href="#_introduction">Introduction</a></li>
 <li><a href="#_best_practices">Best Practices</a>
 <ul class="sectlevel2">
 <li><a href="#_improving_analysis">Improving Analysis</a></li>
 <li><a href="#_what_to_share_or_what_counts_as_valuable_information">What To Share or What Counts As Valuable Information?</a></li>
-<li><a href="#_expressing_confidence_in_an_analysis">Expressing confidence in an analysis</a></li>
+<li><a href="#_intelligence_tagging">Intelligence Tagging</a></li>
+<li><a href="#_expressing_confidenceestimative_probability_in_an_analysis">Expressing confidence/estimative probability in an analysis</a></li>
+<li><a href="#_how_to_track_and_keep_the_state_of_an_analysis">How to track and keep the state of an analysis</a></li>
+<li><a href="#_how_to_classify_information">How to classify information</a></li>
 </ul>
 </li>
 <li><a href="#_authors_and_contributors">Authors and Contributors</a></li>
@@ -455,10 +458,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="_introduction">Introduction</h3>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>This book objective is to compile the best practices in threat intelligence analysis with the support of the open source threat intelligence platform called <a href="https://www.misp-project.org/">MISP</a>. The best practices described are from information sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.</p>
+<p>The aim of this book is to compile the best practices in threat intelligence analysis.</p>
+</div>
+<div class="paragraph">
+<p>Whilst this book can be used as a general guide, it is based on the open source threat intelligence platform called <a href="https://www.misp-project.org/">MISP</a> to give the reader the most practical and real-world experience.</p>
+</div>
+<div class="paragraph">
+<p>The best practices described herein are from Information Sharing communities (ISAC or CSIRT) which are regularly using MISP to support their work and sharing practices.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -479,7 +490,14 @@ Improvement of the analysis process can range from a simple notification of a fa
 </table>
 </div>
 <div class="paragraph">
-<p>A common difficulty in threat intelligence is to improve existing analyses and especially how to do it efficiently. One of the main questions to ask is: what will be the target audience of the improved analysis and the objective thereof?</p>
+<p>A common difficulty in threat intelligence is to improve existing analyses and especially how to do it efficiently.
+One of the main questions to ask is:</p>
+</div>
+<div class="paragraph">
+<p><strong>"What will be the target audience of the improved analysis and the objective thereof?</strong>"</p>
+</div>
+<div class="paragraph">
+<p>The following three answers could come to mind.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -489,16 +507,19 @@ Improvement of the analysis process can range from a simple notification of a fa
 <li>
 <p>Improving an existing analysis by performing a complementary analysis or review which will be shared to and used by another group (e.g. a specific constituent, or a team within your organisation or a member of an ISAC, etc).</p>
 </li>
+<li>
+<p>The end-consumer will be an automaton.</p>
+</li>
 </ol>
 </div>
 <div class="paragraph">
-<p>In the first case, MISP includes a mechanism to propose changes to the original creator, a mechanism we refer to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.</p>
+<p>In the <strong>1st</strong> case, MISP includes a mechanism to propose changes to the original creator, a mechanism MISP refers to as proposals. By using proposals, you can propose a change to the value or the context of an attribute (such as a typographic error in an IP address, missing contextual information, type of the information, the category or the removal of an IDS flag). The proposal will be sent back to the original author who can decide to accept or discard it.</p>
 </div>
 <div class="paragraph">
 <p>The advantages of using the proposal system include the lack of a need to create a new event as well as the process itself being very simple and fast. However, it assumes that the party providing the improvements is willing to lose control over the proposed data. This is pretty efficient for small changes but for more comprehensive changes, especially those that include non-attribute information such as galaxy clusters or objects, the event extension is more appropriate.</p>
 </div>
 <div class="paragraph">
-<p>Apart from being more suitable for more comprehensive changes, the second scenario is also a great fit for the extended event functionality, allowing users wanting to provide additional information or an alternate view-point with the opportunity of creating a self-contained event (which can have its own custom distribution rules) that references the original analysis. This information can be shared back to the original author or kept within a limited distribution scope such as a specific sector, a trust group or as internal information for the organisation providing the additional information.</p>
+<p>Apart from being more suitable for more comprehensive changes, the <strong>2nd</strong> scenario is also a great fit for the extended event functionality, allowing users wanting to provide additional information or an alternate view-point with the opportunity of creating a self-contained event (which can have its own custom distribution rules) that references the original analysis. This information can be shared back to the original author or kept within a limited distribution scope such as a specific sector, a trust group or as internal information for the organisation providing the additional information.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -512,6 +533,14 @@ For more information about the extended event functionality in MISP, the blog po
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>In the <strong>3rd</strong> scenario your use-case might be highly automated, e.g. scripted processing of events and attributes via <a href="https://github.com/MISP/PyMISP">PyMISP</a> and the end-consumer is mainly another automated process, e.g. Intrusion Detection System, 3rd part visualization tool etc.
+This, for automagic reasons, becomes exponentially unreliable.
+What is primal in this case is to fully understand what the IDS flag in MISP does and how it impacts attributes.
+Further on, it is even more important to fully understand the entire tool-chain, cradle-to-grave style.
+Where does the data come from (cradle) where does it go to (grave) and what processes "touch" the data as it flows through, small diagrams can help tremendously to visualize the actual data-flow.
+Those diagrams will mostly be of use once unexpected results occur, or other errors appear somewhere in the chain.</p>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
@@ -523,7 +552,7 @@ For more information about the extended event functionality in MISP, the blog po
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Valuable information is a moving concept and highly depending of the goal of the users sharing and/or using the information. A valuable information can also evolve following the capabilities of an organisation.
+Valuable information is a moving concept and depends highly on the goal of the users sharing and/or using the information. A valuable information can also evolve following the capabilities of an organisation.
 </td>
 </tr>
 </table>
@@ -532,12 +561,12 @@ Valuable information is a moving concept and highly depending of the goal of the
 <p>Contribution comes in various shapes and sizes.</p>
 </div>
 <div class="paragraph">
-<p>Information which are often distributed within sharing communities are the following:</p>
+<p>Information which is often distributed within sharing communities are the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Analysis report of a specific threat (such as security vendor report, blog post) which can be open source intelligence or limited distribution</p>
+<p>Analysis report of a specific threat (such as security vendor report, blog post) which can be Open Source intelligence or come as limited distribution</p>
 </li>
 <li>
 <p>Enhanced analysis of an existing report (such as data qualification, competitive or counter analysis)</p>
@@ -563,7 +592,7 @@ Valuable information is a moving concept and highly depending of the goal of the
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-By having a look at <a href="https://www.misp-project.org/objects.html">the object templates</a> or the <a href="https://www.misp-project.org/datamodels/#misp-core-format">MISP attribute types</a>, this can help you to discover what it&#8217;s actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
+By having a look at <a href="https://www.misp-project.org/objects.html">the object templates</a> or the <a href="https://www.misp-project.org/datamodels/#misp-core-format">MISP attribute types</a>, this can help you discover what is actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
 </td>
 </tr>
 </table>
@@ -575,7 +604,7 @@ By having a look at <a href="https://www.misp-project.org/objects.html">the obje
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-When asking for the support of the community, using a specific taxonomy such as <a href="https://www.misp-project.org/taxonomies.html#_collaborative_intelligence">collaborative intelligence</a> to express your needs might help everyone and improve automation.
+When asking for the support of the community, using a specific taxonomy such as <a href="https://www.misp-project.org/taxonomies.html#_collaborative_intelligence">collaborative intelligence</a> to express your needs, will make your request more concise improving your feedback potential and improve automation.
 </td>
 </tr>
 </table>
@@ -583,7 +612,23 @@ When asking for the support of the community, using a specific taxonomy such as 
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="_expressing_confidence_in_an_analysis">Expressing confidence in an analysis</h3>
+<h3 id="_intelligence_tagging">Intelligence Tagging</h3>
+<div class="paragraph">
+<p>There are several factors to successful and efficient intelligence sharing. Certainly, one major aspect is the quality of the indicators (or observable depending on the definition you use),
+stored as attributes within a MISP event itself.
+However, it does not stop there. Even the most viable information gained by a shared event can render itself complete useless if not classified and tagged accordingly.
+One feature which enables a uniformed classification is implemented in MISP as tags. Currently, there are two types of tags, which differ in the respective place they are set.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You can add tags to an <strong>entire event</strong>. These <strong>tags should be valid for any individual attribute</strong>, thus indicator associated to this specific event.</p>
+</li>
+<li>
+<p>For a more fine-grained specification all of these tags can also be placed at attribute level. This allows the user to put a more detailed and selective view on each attribute.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -591,32 +636,170 @@ When asking for the support of the community, using a specific taxonomy such as 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Expressing the confidence or the lack of in an analysis is critical step to help a partner or a third-party to check your hypotheses and conclusions.
+Currently there is no programmatic way that prevents you from not following the 1st rule. Thus human garbage tagging in automation output potentially useless.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In future releases there will also be tagging for MISP Objects. Which is, somehow, an intermediate solution for the two prior mentioned options.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+MISP Objects in its plain concept is a grouping of indicators within one event. These grouped indicators are somehow logically linked together. The specific relationship is described by the individual object type.
+A simple <strong>file object</strong>, links for example a filename to its observed hash values (md5, sha1, sha256 and many more). This can further be enriched via misp-modules or other plug-ins.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Analysis or reports are often shared with technical details but often lack the overall confidence level associated.</p>
+<p>A frequent use-case for placing additional tags on attribute level would be to lower the confidence in certain attributes. If the event is classified with a high confidence tag, some indicators e.g. legit-but-compromised domains or popular filenames should be labeled with a lowered confidence class. There are several real world examples where this or similar attribute specific tagging has proven to be worthwhile.</p>
 </div>
 <div class="paragraph">
-<p>Adding confidence or estimative probability have multiple advantages such as:</p>
+<p>Most of the tags are organised in dedicated MISP Taxonomies. Those schema dictate how tags should look like and how they are to be applied in certain conditions.
+There are many general details on this topic which can be read up on in the main <a href="https://github.com/MISP/misp-taxonomies">MISP Taxonomy GitHub repository</a>.
+Currently, there are more than 60 different taxonomies available, each of them containing a number of different tags, which are steadily increasing and evolving.
+There are a lot of advantages in having such a vast variety of tags, e.g. there is one tag for each known associated malware type.</p>
+</div>
+<div class="paragraph">
+<p>However, this sheer amount of tags can lead to two main concerns, <strong>over-tagging</strong> and <strong>miss-tagging</strong>. Beginners can be overwhelmed with the large number of available tags, and might miss exactly the required taxonomy to properly label the to be shared data.
+As a site administrator it is thus important to enable the taxonomies that are known to the users on the MISP instance, (or to remote organizations you might sync with).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In MISP making a Taxonomy available is a 2-step process. First you make the taxonomy available and then you can either decide to enable all the individual tags in the taxonomy or cherry-pick only the relevant ones for your use-case. (The Vocabulary for Event Recording and Incident Sharing (VERIS) has well over 1990 tags, and perhaps you are only interested in the sub-set <code>veris:action:error:variety</code>).
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Over-tagging in most cases only leads to an overwhelming visual appearance. Miss-tagging, however, is a critical step into mis-usage of shared data.
+The best and most devastating example would be the miss classification of an event. In dedicated and private sharing groups it is quite usual to share intelligence labeled as „for your company only“.
+This data must not leave the boundaries of this virtual border of the recipient’s firm.</p>
+</div>
+<div class="paragraph">
+<p>To prevent this kind of mistake, the traffic light protocol (aka TLP) and its respective taxonomy can be used and thus complementing the mitigation in the note below.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+One mitigation the scenario of mis-classified data, would be to use the warning lists (or notice lists) as a canary. Whilst not ideal and far from a defacto solution to catch all issues, it would be a good-enough-yet-coarse way of detection.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>There are multiple solutions to solve the issue of missing additional information about the shared content.
+One of them is the following list of tags which are deemed to be the minimal subset at the start of any event or the individual attributes.
+sharing platform. The list below is in order of importance.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong><a href="https://github.com/MISP/misp-taxonomies/blob/master/tlp/machinetag.json">TLP-Tags</a></strong>: <a href="https://www.us-cert.gov/tlp">TLP</a> utilizes a simple four color schema for indicating how intelligence can be shared.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/MISP/misp-taxonomies/blob/master/veris/machinetag.json">Confidence-Tags</a></strong>/<strong><a href="https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json">Vetting State</a></strong>: There are huge differences in the quality of data, whether it was vetted upon sharing. As this means that the author was confident that the shared data is or at least was a good indicator of compromise.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json">Origin-Tags</a></strong>: Describes where the information came from, whether it was in an automated fashion or in a manual investigation. This should give an impression how value this intelligence is, as manual investigation should supersede any automatic generation of data.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/MISP/misp-taxonomies/blob/master/PAP/machinetag.json">PAP-Tags</a></strong>: An even more advanced approach of data classification is using the Permissible Actions Protocol. It indicates how the received data can be used to search for compromises within the individual company or constituency.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The full list of available taxonomies can be found <strong><a href="https://github.com/MISP/misp-taxonomies">here</a></strong>.
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_expressing_confidenceestimative_probability_in_an_analysis">Expressing confidence/estimative probability in an analysis</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Expressing the confidence or the lack of it in an analysis is a critical step to help a partner or a third-party to check your hypotheses and conclusions.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Analysis or reports are often shared together with technical details, but often lack the associated overall confidence level.
+To ascertain this confidence level you can use for example the MISP Taxonomies called <a href="https://www.misp-project.org/taxonomies.html#_admiralty_scale">admiralty-scale</a> and/or <a href="https://www.misp-project.org/taxonomies.html#_estimative_language">estimative-language</a>.
+This is a very human way to describe either globally an event or individual indicators of an event, with a set of easy to read human tags. (e.g: admiralty-scale:source-reliability="a/b/c&#8230;&#8203;", estimative-language:likelihood-probability="almost-no-chance", estimative-language:confidence-in-analytic-judgment="moderate")
+Generally it is good practice to do this globally for the event as this will enrich the trust/value if set.
+Using this in an automated way is also possible but without human intervention, or AI that actually works, not recommended.
+Also, on events with hundreds of attributes this is cumbersome and perhaps unfeasible and will just frustrate operators.
+The obvious side-effect of this approach is that automation will be the overall benefactor too upping the trust on that level too.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[TODO: revise description of estimative probability]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Thus, adding confidence or estimative probability has multiple advantages such as:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Allowing receiving organisations to filter, classify and score the information in an automated way</p>
+<p>Allow receiving organisations to filter, classify and score the information in an automated way based on related tags</p>
 </li>
 <li>
-<p>Information with low-confidence can still be shared and reach communities or organisations interested in such information without impacting organisations filtering out by confidence level</p>
+<p>Information with low-confidence can still be shared and reach communities or organisations interested in such information without impacting organisations filtering out by increased confidence level</p>
 </li>
 <li>
-<p>Supporting counter and competitive analyses to validate hypotheses expressed in original reporting</p>
+<p>Support counter analyses and competitive analyses to validate hypotheses expressed in original reporting</p>
+</li>
+<li>
+<p>Depending on source organisation, have an affirmative that some HumInt has one into the sharing process</p>
+<div class="literalblock">
+<div class="content">
+<pre>[TODO: define counter and competitive analyses]</pre>
+</div>
+</div>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Complement analysis with contrary evidences is also very welcome to ensure the original analysis and the hypotheses evaluated.</p>
+<p>Complement analysis with contrary evidences is also very welcome to ensure the original analysis and the hypotheses are properly evaluated.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -644,6 +827,76 @@ threat-intelligence.eu includes an overview of the <a href="https://www.threat-i
 </div>
 <div style="page-break-after: always;"></div>
 </div>
+<div class="sect2">
+<h3 id="_how_to_track_and_keep_the_state_of_an_analysis">How to track and keep the state of an analysis</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Having a workflow to follow, and be able to refer to, is something useful for the analyst as well as for other people reading or relying on the analysis.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Keeping track of the advancement of an analysis, of what has been done or still needs to be done, is important in order not to forget anything on either side and to ensure work is not performed redundantly by accident. It is essential to have a method to keep these information clear and concise.</p>
+</div>
+<div class="paragraph">
+<p>One of the possible methodologies is to use tags to mark the information and convey the current state of an analysis.</p>
+</div>
+<div class="paragraph">
+<p>For instance the MISP Workflow Taxonomy allows the user to describe the state of an analysis, as <code>complete</code> or <code>incomplete</code>. Moreover, it can be used to clearly specify what still needs to be done using the <code>todo</code> tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (<code>todo</code>) and the other part is about the current state of the analysis(<code>state</code>) such as <code>incomplete</code>, <code>draft</code> or <code>complete</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For more information on the MISP Workflow Taxonomy, feel free to read the <a href="https://www.misp-project.org/taxonomies.html#_workflow">Workflow taxonomy cheat sheet</a>.
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_classify_information">How to classify information</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Classifying information is something that has proven being very useful in lots of domains, including Threat Intelligence, as it helps assessing the main information very quickly. Moreover, it can help to build correlations between events or reports, allowing analysts to better understand threat actors.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The first tool we can use to classify information are tags and taxonomies
+. Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leaks.
+. They can also be used to describe the source where information came from.
+. Many taxonomies allow the user to further explain the kind of threat.[TODO: was that the meaning?]
+--mapping--</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Galaxies (ATT&amp;CK matrix)</p>
+</li>
+<li>
+<p>Comments</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -652,10 +905,13 @@ threat-intelligence.eu includes an overview of the <a href="https://www.threat-i
 <div class="ulist">
 <ul>
 <li>
-<p>Alexandre Dulaunoy</p>
+<p><a href="https://github.com/adulau">Alexandre Dulaunoy</a></p>
 </li>
 <li>
-<p>Andras Iklody</p>
+<p><a href="https://github.com/igl0cksa">Andras Iklody</a></p>
+</li>
+<li>
+<p><a href="https://github.com/SteveClement">Steve Clement</a></p>
 </li>
 </ul>
 </div>
@@ -666,6 +922,12 @@ threat-intelligence.eu includes an overview of the <a href="https://www.threat-i
 <div class="sectionbody">
 <div class="dlist glossary">
 <dl>
+<dt>MISP Glossary</dt>
+<dd>
+<p>This glossary is meant as a quick lookup document in case of any need of clarification of any threat sharing, threat-intel lingo.
+Be careful when adding terms to the glossary. Adding a generic term like: <strong>MISP</strong> will prevent terms like <strong>MISP noticelist</strong> to be addded. As a matter of definition please use the singular for any terms.
+In case you use any CCBYSA licensed content, or other pieces that are subject to licensing, make sure to add it as a by-line at the end of the mention.</p>
+</dd>
 <dt>ISAC</dt>
 <dd>
 <p>Information Sharing and Analysis Center</p>
@@ -674,6 +936,70 @@ threat-intelligence.eu includes an overview of the <a href="https://www.threat-i
 <dd>
 <p>MISP - Open Source Threat Intelligence Platform &amp; Open Standards For Threat Information Sharing</p>
 </dd>
+<dt>MISP Modules</dt>
+<dd>
+<p>MISP modules are autonomous modules that can be used for expansion and other services in MISP. <a href="https://github.com/MISP/misp-modules">MISP modules GitHub Repository</a></p>
+</dd>
+<dt>MISP warninglists</dt>
+<dd>
+<p>MISP warninglists are lists of well-known indicators that can be associated to potential false positives, errors or mistakes. <a href="https://github.com/MISP/misp-warninglists">MISP warninglists GitHub Repository</a></p>
+</dd>
+<dt>MISP noticelist</dt>
+<dd>
+<p>Notice lists to inform MISP users of the legal, privacy, policy or even technical implications of using specific attributes, categories or objects. <a href="https://github.com/MISP/misp-noticelist">MISP noticelist GitHub Repository</a></p>
+</dd>
+<dt>MISP Taxonomies</dt>
+<dd>
+<p><a href="https://en.wikipedia.org/wiki/Taxonomy_(general)">Taxonomy</a> is the practice and science of classification. The word is also used as a count noun: a taxonomy, or taxonomic scheme, is a particular classification. The word finds its roots in the Greek language τάξις, taxis (meaning 'order', 'arrangement') and νόμος, nomos ('law' or 'science'). For more details on taxonomies and classification <a href="https://www.circl.lu/doc/misp-taxonomies/">the documentation</a>. Partial source <a href="https://en.wikipedia.org/wiki/Taxonomy_(general)">"Taxonomy_(general)"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>. There is a Python module available to work with Taxonomies in a Pythonic way called <a href="https://github.com/MISP/PyTaxonomies">PyTaxonomies</a>. <a href="https://github.com/MISP/misp-taxonomies">MISP taxonomies GitHub Repository</a></p>
+</dd>
+<dt>MISP Sightings</dt>
+<dd>
+<p>Basically, sighting is a system allowing people to react on attributes on an event. It was originally designed to provide an easy method for user to tell when they see a given attribute, giving it more credibility.</p>
+</dd>
+<dt>MISP Objects</dt>
+<dd>
+<p>MISP objects are used in MISP (starting from version 2.4.80) system and can be used by other information sharing tool. MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing. The objects are just shared like any other attributes in MISP even if the other MISP instances don’t have the template of the object. The following document is generated from the machine-readable JSON describing the MISP objects. <a href="https://github.com/MISP/misp-objects">MISP objects GitHub Repository</a> <a href="https://www.misp-project.org/objects.html">More</a></p>
+</dd>
+<dt>API</dt>
+<dd>
+<p>MISP makes extensive use of its RESTful API (Application programming interface) both internally and provides an external API for automation, synchronisation or any other tasks requiring a machine to machine interface. In general terms, it is a set of clearly defined methods of communication between various software components. A good <a href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. An API may be for a web-based system, operating system, database system, computer hardware or software library. The de-facto standard for talking to MISP via an API is <a href="https://github.com/MISP/PyMISP">PyMISP</a>. Partial source <a href="https://en.wikipedia.org/wiki/Application_programming_interface">"API"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
+</dd>
+<dt>RESTful</dt>
+<dd>
+<p>Representational state transfer (<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>) or RESTful web services are a way of providing interoperability between computer systems on the Internet. REST-compliant Web services allow requesting systems to access and manipulate textual representations of Web resources using a uniform and predefined set of stateless operations. Other forms of Web services exist which expose their own arbitrary sets of operations such as WSDL and SOAP. Source <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">"REST"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
+</dd>
+<dt>PyMISP</dt>
+<dd>
+<p><a href="https://github.com/MISP/PyMISP">PyMISP</a> is a Python library to access <a href="https://github.com/MISP/MISP">MISP</a> platforms via their REST API. PyMISP allows you to fetch events, add or update events/attributes, add or update samples or search for attributes.</p>
+</dd>
+<dt>IDS</dt>
+<dd>
+<p>An IDS flag on an attribute allows to determine if an attribute can be automated (such as being exported as an IDS ruleset or used for detection). If the IDS flag is not present, the attribute can be useful for contextualisation only.</p>
+</dd>
+<dt>IOC</dt>
+<dd>
+<p>Indicator of compromise (IOC or IoC) is an artefact observed on a network or in an operating system or information channel that could reference an intrusion or a reference to a technique used by an attacker. IoCs are a subset of indicators.</p>
+</dd>
+<dt>Attribute</dt>
+<dd>
+<p>Attributes in MISP can be network indicators (e.g. IP address), system indicators (e.g. a string in memory) or even bank account details.</p>
+</dd>
+<dt>Observable</dt>
+<dd>
+<p>Obserbables are essentially the same as (MISP) attributes.</p>
+</dd>
+<dt>Site admin</dt>
+<dd>
+<p>As an admin (not to be confused with Org Admin), you can set up new accounts for users, edit user profiles, delete them, or just have a look at all the viewers' profiles. Site admins have access to every administrator feature for all the data located on the system including global features such as the creation and modification of user roles and instance links. You will also see all other organisations connected or setup in the instance. The site admin can be considered as a super-user of a MISP instance.</p>
+</dd>
+<dt>Org Admin</dt>
+<dd>
+<p>Organisation admins (Org Admin) are restricted to executing site-admin actions exclusively within their own organisation’s users only. They can administer users, events and logs of their own respective organisations.</p>
+</dd>
+<dt>OSINT</dt>
+<dd>
+<p><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">Open-source intelligence</a> (OSINT) is data collected from publicly available sources to be used in an intelligence context.[1] In the intelligence community, the term "open" refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence. OSINT under one name or another has been around for hundreds of years. With the advent of instant communications and rapid information transfer, a great deal of actionable and predictive intelligence can now be obtained from public, unclassified sources. Source <a href="https://en.wikipedia.org/wiki/Open-source_intelligence">"Open-source intelligence"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
+</dd>
 </dl>
 </div>
 </div>
@@ -681,7 +1007,7 @@ threat-intelligence.eu includes an overview of the <a href="https://www.threat-i
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-22 21:21:07 CEST
+Last updated 2019-02-15 17:45:14 +0900
 </div>
 </div>
 </body>
