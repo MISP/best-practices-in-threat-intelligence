@@ -43,6 +43,7 @@ include::{sourcedir}how-to-classify-information.adoc[]
 - https://github.com/adulau[Alexandre Dulaunoy]
 - https://github.com/iglocska[Andras Iklody]
 - https://github.com/SteveClement[Steve Clement]
+- https://github.com/neok0[Tobias Mainka]
 
 [glossary]
 == Glossary
