@@ -44,4 +44,4 @@ sharing platform. The list below is in order of importance.
 . *https://github.com/MISP/misp-taxonomies/blob/master/cssa/machinetag.json[Origin-Tags]*: Describes where the information came from, whether it was in an automated fashion or in a manual investigation. This should give an impression how value this intelligence is, as manual investigation should supersede any automatic generation of data.
 . *https://github.com/MISP/misp-taxonomies/blob/master/PAP/machinetag.json[PAP-Tags]*: An even more advanced approach of data classification is using the Permissible Actions Protocol. It indicates how the received data can be used to search for compromises within the individual company or constituency.
 
-TIP: The full list of available taxonomies can be found *https://github.com/MISP/misp-taxonomies[here]*.
+TIP: The full list of available taxonomies can be found *https://github.com/MISP/misp-taxonomies[misp-taxonomies]*.

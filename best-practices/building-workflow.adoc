@@ -8,5 +8,8 @@ One of the possible methodologies is to use tags to mark the information and con
 
 For instance the MISP Workflow <<Taxonomy>> allows the user to describe the state of an analysis, as `complete` or `incomplete`. Moreover, it can be used to clearly specify what still needs to be done using the `todo` tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (`todo`) and the other part is about the current state of the analysis(`state`) such as `incomplete`, `draft` or `complete`.
 
+The MISP Workflow <<Taxonomy>> can be expanded with local or global values. There are many existing todo such as `workflow:todo="check-passive-dns-for-shared-hosting"` or action related to the analysis `workflow:todo="preserve-evidence"`.
 
 TIP: For more information on the MISP Workflow Taxonomy, feel free to read the https://www.misp-project.org/taxonomies.html#_workflow[Workflow taxonomy cheat sheet].
+
+TIP: To not confuse, MISP also includes a https://www.misp-project.org/2022/08/08/MISP.2.4.160.released.html/[workflow feature] which allows MISP users to create workflow based on MISP triggers. 

@@ -1,17 +1,17 @@
-=== How to classify information
+=== How to classify (label) information
 
-NOTE: Classifying information is something that has proven being very useful in lots of domains, including Threat Intelligence, as it helps assessing the main information very quickly. Moreover, it can help to build correlations between events or reports, allowing analysts to better understand threat actors.
+NOTE: Classifying (labelling) information is something that has proven being very useful in lots of domains, including Threat Intelligence, as it helps assessing the main information very quickly. Moreover, it can help to build correlations between events or reports, allowing analysts to better understand threat actors.
 
 The first tool we can use to classify information are tags and taxonomies
 
-. Tags can be used to describe how the information can be shared, using the tlp (Traffic Light Protocol) taxonomy, in order to prevent information leaks.
+- Tags can be used to describe how the information can be shared, using the TLP (Traffic Light Protocol) https://www.misp-project.org/taxonomies.html#_tlp_2[taxonomy], in order to prevent information leaks.
+- Specific taxonomy such as https://www.misp-project.org/taxonomies.html#_pap[PAP] is designed to how information can be used and how far.
+- They can also be used to describe the source where information came from.
+- Many taxonomies allow the user to further explain the kind of threat.
 
-. They can also be used to describe the source where information came from.
+Using tags allow users to proper filter information from an automation perspective. If the https://www.misp-project.org/openapi/[API] is used, the tags can be used to filter in or out the information expected.
 
-. Many taxonomies allow the user to further explain the kind of threat.
+When more complete information is required to label a specific event or attribute in MISP, https://www.misp-project.org/galaxy.html[MISP galaxy] comes to the rescue. MISP galaxy can express complex knowledge base of information. MITRE ATT&CK is described using a MISP galaxy. By default, MISP comes with multiple knowledge bases including Threat Actor databases, ransomware groups and many others.
 
-// [TODO: was that the meaning?]
-//--mapping--
+TIP: Review existing MISP galaxy by browsing all of those on your MISP instances. Many include relationships (e.g. MISP Threat Actor database with MITRE ATT&CK groups).
 
-- <<MISPGalaxies>> (ATT&CK matrix)
-- Comments

@@ -45,5 +45,5 @@ space
 echo "Done!"
 
 # If ../misp-website exists, copy over. This is for core MISP maintainers with write access to the website.
-[[ -d ../misp-website ]] && cp book.html ../misp-website/best-practices-in-threat-intelligence.html
-[[ -d ../misp-website ]] && cp book.pdf  ../misp-website/best-practices-in-threat-intelligence.pdf
+[[ -d ../misp-website ]] && cp book.html ../misp-website-new/best-practices-in-threat-intelligence.html
+[[ -d ../misp-website ]] && cp book.pdf  ../misp-website-new/best-practices-in-threat-intelligence.pdf

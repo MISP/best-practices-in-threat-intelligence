@@ -11,8 +11,10 @@ Information which is often distributed within sharing communities are the follow
 - A post-mortem analysis of an incident
 - Additional information about existing or known threats (such as adversary techniques, new malware samples or complementary discoveries)
 - False-positive or false-negative reporting
-- Asking for contribution or support from the community (such as "have you seen this threat?" or "do you have more samples?")
+- Asking for contribution or support from the community (such as "have you seen this threat?" or "do you have more samples?" as described in https://www.misp-project.org/taxonomies.html#_collaborative_intelligence[collaborative intelligence] taxonomy)
 
 TIP: By having a look at https://www.misp-project.org/objects.html[the object templates] or the https://www.misp-project.org/datamodels/#misp-core-format[MISP attribute types], this can help you discover what is actively shared within other communities. If a type or an object template is not matching your data model, you can easily create new ones.
 
 TIP: When asking for the support of the community, using a specific taxonomy such as https://www.misp-project.org/taxonomies.html#_collaborative_intelligence[collaborative intelligence] to express your needs, will make your request more concise improving your feedback potential and improve automation.
+
+TIP: MISP allows to extend an existing event without touching the original event. This feature can be used to enhance analysis without affecting the original ones and creating new distribution levels.
