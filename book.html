@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="MISP Project">
 <title>Best Practices in Threat Intelligence</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -85,10 +85,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -859,10 +859,10 @@ Having a workflow to follow, and be able to refer to, is something useful for th
 <p>One of the possible methodologies is to use tags to mark the information and convey the current state of an analysis.</p>
 </div>
 <div class="paragraph">
-<p>For instance the MISP Workflow <a href="#Taxonomy">[Taxonomy]</a> allows the user to describe the state of an analysis, as <code>complete</code> or <code>incomplete</code>. Moreover, it can be used to clearly specify what still needs to be done using the <code>todo</code> tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (<code>todo</code>) and the other part is about the current state of the analysis(<code>state</code>) such as <code>incomplete</code>, <code>draft</code> or <code>complete</code>.</p>
+<p>For instance the MISP Workflow <a href="#Taxonomy">Taxonomy</a> allows the user to describe the state of an analysis, as <code>complete</code> or <code>incomplete</code>. Moreover, it can be used to clearly specify what still needs to be done using the <code>todo</code> tags. The workflow taxonomy is separated into two parts. One part is related to the actions to be done (<code>todo</code>) and the other part is about the current state of the analysis(<code>state</code>) such as <code>incomplete</code>, <code>draft</code> or <code>complete</code>.</p>
 </div>
 <div class="paragraph">
-<p>The MISP Workflow <a href="#Taxonomy">[Taxonomy]</a> can be expanded with local or global values. There are many existing todo such as <code>workflow:todo="check-passive-dns-for-shared-hosting"</code> or action related to the analysis <code>workflow:todo="preserve-evidence"</code>.</p>
+<p>The MISP Workflow <a href="#Taxonomy">Taxonomy</a> can be expanded with local or global values. There are many existing todo such as <code>workflow:todo="check-passive-dns-for-shared-hosting"</code> or action related to the analysis <code>workflow:todo="preserve-evidence"</code>.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1049,6 +1049,10 @@ In case you use any CCBYSA licensed content, or other pieces that are subject to
 <dd>
 <p><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">Open-source intelligence</a> (OSINT) is data collected from publicly available sources to be used in an intelligence context.[1] In the intelligence community, the term "open" refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence. OSINT under one name or another has been around for hundreds of years. With the advent of instant communications and rapid information transfer, a great deal of actionable and predictive intelligence can now be obtained from public, unclassified sources. Source <a href="https://en.wikipedia.org/wiki/Open-source_intelligence">"Open-source intelligence"</a> - <a href="https://creativecommons.org/licenses/by-sa/3.0/">CCBYSA</a>.</p>
 </dd>
+<dt><a id="Taxonomy"></a>Taxonomy</dt>
+<dd>
+<p>MISP Taxonomies is a set of common classification libraries to tag, classify and organise information. Taxonomy allows to express the same vocabulary among a distributed set of users and organisations.</p>
+</dd>
 </dl>
 </div>
 </div>
@@ -1056,7 +1060,7 @@ In case you use any CCBYSA licensed content, or other pieces that are subject to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-11-06 16:48:13 +0100
+Last updated 2022-11-06 17:44:18 +0100
 </div>
 </div>
 </body>
